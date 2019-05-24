@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<root>
+  <Pozycja ID="tata">
+    <Polski>Tata</Polski>
+    <Norweski>Papa</Norweski>
+    <Angielski>Dad</Angielski>
+  </Pozycja>
+  <Pozycja ID="mama">
+    <Polski>Mama</Polski>
+    <Norweski>Mamma</Norweski>
+    <Angielski>Mother</Angielski>
+  </Pozycja>
+   <Pozycja ID="brat">
+    <Polski>Mama</Polski>
+    <Norweski>bror</Norweski>
+    <Angielski>brother</Angielski>
+  </Pozycja>
+  <Pozycja ID="siostra">
+    <Polski>siostra</Polski>
+    <Norweski>soster</Norweski>
+    <Angielski>sister</Angielski>
+  </Pozycja>
+  <Pozycja ID="syn">
+    <Polski>syn</Polski>
+    <Norweski>sonn</Norweski>
+    <Angielski>son</Angielski>
+  </Pozycja>
+  <Pozycja ID="córka">
+    <Polski>córka</Polski>
+    <Norweski>datter</Norweski>
+    <Angielski>daughter</Angielski>
+  </Pozycja>
+  <Pozycja ID="dzieci">
+    <Polski>dzieci</Polski>
+    <Norweski>barn</Norweski>
+    <Angielski>children</Angielski>
+  </Pozycja>
+  <Pozycja ID="babcia">
+    <Polski>babcia</Polski>
+    <Norweski>bestemor</Norweski>
+    <Angielski>grandmother</Angielski>
+  </Pozycja>
+  <Pozycja ID="dziadek">
+    <Polski>dziadek</Polski>
+    <Norweski>bestemor</Norweski>
+    <Angielski>grandpa</Angielski>
+  </Pozycja>
+  <Pozycja ID="wujek">
+    <Polski>wujek</Polski>
+    <Norweski>onkel</Norweski>
+    <Angielski>uncle</Angielski>
+  </Pozycja>
+  <Pozycja ID="ciocia">
+    <Polski>ciocia</Polski>
+    <Norweski>tante</Norweski>
+    <Angielski>auntie</Angielski>
+  </Pozycja>
+  <Pozycja ID="biały">
+    <Polski>biały</Polski>
+    <Norweski>hvit</Norweski>
+    <Angielski>white</Angielski>
+  </Pozycja>
+  <Pozycja ID="czarny">
+    <Polski>czarny</Polski>
+    <Norweski>sort</Norweski>
+    <Angielski>black</Angielski>
+  </Pozycja>
+</root>

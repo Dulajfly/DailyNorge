@@ -1,0 +1,69 @@
+﻿<Window x:Class="DailyNorge.TranslateSearch"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DailyNorge"
+        mc:Ignorable="d"
+        Title="Translate" Height="500" Width="800">
+    <Window.Resources>
+        <XmlDataProvider x:Key="XmlData" Source="DictionaryTranslate.xml"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="img/gotowe.png"/>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="59" />
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="auto" MinHeight="200"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="0"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="Auto" MinHeight="50"/>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="62"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <TextBox x:Name="SearchWord" CharacterCasing="Lower" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" Text="Wpisz słowo" VerticalAlignment="Center" Background="White" FontFamily="Lato" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextChanged="TextBox_TextChanged" Width="230" MouseLeftButtonUp="SearchWord_MouseLeftButtonUp" Height="45" Margin="10,91,10,64"/>
+
+        <Label x:Name="norweski_polski" Content="        polski" HorizontalAlignment="Right" VerticalAlignment="Top" Height="180
+               " Width="154" Foreground="White" Margin="0,10,107,0" Grid.Column="0" FontSize="20" MouseLeftButtonUp="Label_MouseLeftButtonUp" Grid.RowSpan="3">
+            <Label.Background>
+                <ImageBrush ImageSource="img/polandflag.png" Stretch="None"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="polskiNorweski" Content="      norweski" HorizontalAlignment="Left" VerticalAlignment="Top" Height="180" Width="154" Margin="50,10,0,0" Grid.Column="1" Foreground="#FFFF5602" FontSize="20" MouseLeftButtonUp="PolskiNorweski_MouseLeftButtonUp" Grid.RowSpan="3">
+            <Label.Background>
+                <ImageBrush ImageSource="img/norwayflag.png" Stretch="None"/>
+            </Label.Background>
+        </Label>
+        <Button x:Name="SearchButton" Content="Szukaj" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Bottom" Height="35" Width="150" FontFamily="Lato" FontSize="20" Foreground="White" BorderBrush="{x:Null}" Click="SearchButton_Click" Margin="50,0">
+            <Button.Background>
+                <ImageBrush ImageSource="img/button.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="GoToAddWord" Content="Dodaj słowo" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="8" VerticalAlignment="Center" Height="43" Width="150" BorderBrush="{x:Null}" Foreground="White" FontFamily="Lato" FontSize="20" Margin="50,9,50,10" Click="Button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="img/button.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="ReturnButton" Content="Cofnij" HorizontalAlignment="Left" Margin="10,19,0,0" Grid.Row="8" Foreground="White" BorderBrush="{x:Null}" FontSize="20" FontFamily="Lato" VerticalAlignment="Top" Click="ReturnButton_Click" Width="102" Height="33">
+            <Button.Background>
+                <ImageBrush ImageSource="img/button.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="angielski" Content="      angielski" Grid.Column="2" HorizontalAlignment="Left" Margin="107,10,0,0" VerticalAlignment="Top" Width="154" Height="180
+               " Foreground="White" Grid.RowSpan="3" FontSize="20" MouseLeftButtonUp="Angielski_MouseLeftButtonUp">
+            <Label.Background>
+                <ImageBrush ImageSource="img/flagaangli.png" Stretch="None"/>
+            </Label.Background>
+        </Label>
+    </Grid>
+</Window>
